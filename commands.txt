@@ -1,0 +1,175 @@
+
+boot:
+      compile - boot -f file.clj
+        or
+        put code in build.boot and boot <main-deftask-name>
+
+      task:
+          creating:
+
+         (deftask <name>
+            <description>
+            [<short-arg-name> <arg-name> <default-val> <parameter-type> <param-desc>]
+          <some-func>)
+
+          editing default values:
+
+            (task-options! <name> {:<arg-name> <val>})
+      
+
+                  LINUX
+
+      change java version sudo update-alternatives --config java
+
+                  SPACEMACS
+
+utils:
+      change file encoding - C-x RET f
+      set a mark - C-SPC
+      jump to the mark - SPC u C-SPC
+      colors - SPC c l
+      stop process in cider - C-c C-c
+
+      port listening - lsof -i :8080
+      fuser 8080/tcp - show who is listening
+      fuser -k 8080/tcp - kill
+
+windows:
+
+      create new frame - SPC w F
+      change frame - SPC w o
+      close frame - SPC w D
+      kill matching buffers - SPC SPC kill-matching-buffers
+
+version control:
+
+      C-x v ...
+
+refactor:
+
+      replace - :%s/old/new/g
+
+      add dependency - , r a p
+      add require to ns - , r a r
+      create function with name under cursor - , r f e
+      create function with sexp under cursor - , r e f
+
+      extract const - , r e c
+      extract def - , r e d
+
+      hotload dependency - , r h d
+      create thread macro from sexp - , r t l
+      wrap extp in thread macro - , r u w
+      unthread exp - , r u a
+
+      implement methods - , r a s
+
+      update dependencies - , r u p
+
+      move to let symbol under cursor - , r m l
+
+      change collection type - , r c <collection bracket>
+
+      insert new-line - SPC j n
+      create new-line - SPC j o
+      split sexp - SPC j s
+
+      copy and comment - SPC c y
+
+      
+
+      navigating - SPC k l/L/h/H/j/k
+
+      jump to expresion end/beginning - SPC k $/0
+      jump to the next expression ending/beginning - SPC k j/k
+      jump to the beginning of a parent sexp - SPC k U
+      open sexp after current expr - SPC k )
+
+      absorb sexp - SPC k a (same as SPC k s but reverse)
+      delete sexp - SPC k d x
+      slurp - SPC k s/S
+      wrap sexp - SPC k w
+      unwrap sexp - SPC k W
+      copy sexp - SPC k y
+      encapsulate part for editing in a separate window - SPC n r/w
+
+      remove inner sexp - SPC k e
+      remove outter sexp - SPC k E
+
+
+      iedit:
+
+            edit occurencies - SPC s e/v e
+            restrict the scope to a function - SPC s e F
+
+      evil-surround:
+
+            ( - with space ) - without space
+
+            surround a word - y s i W/w <paren type>
+            surround the whole sentence - y s s <paren type>
+            
+
+
+      highlight symbol - S *
+
+projectile:
+
+      directories in a project - SPC p d
+      buffers in a project - SPC p b
+      compile project - SPC p c - check this one
+      kill buffers in project - SPC p k
+
+layout:
+  
+      last layout - SPC l TAB
+      add buffer to layout - SPC l a
+
+quiting:
+
+      restart emacs and resume layouts - SPC q r
+      restart emacs - SPC q R
+      quit unsafe - SPC q Q
+      quit with prompt - SPC q q
+      save buffers and quit - SPC q s
+      kill frame - SPC q z
+
+navigating:
+
+      show previous yanked parts - SPC r y
+      list of functions - SPC s j
+      expand region - SPC v
+
+      searching text - SPC s p (SPC /) (SPC *)
+      searching text in open buffets - SPC s B/b
+      
+
+evaluating:
+
+      skewer:
+        eval buffer - , s b
+        eval function - , s f
+        eval expr - , e e
+        skewer repl - , '
+
+
+
+
+
+
+insert:
+
+      lorem ipsum - SPC i l
+      utf code - SPC i u
+      uuid - SPC i U U
+
+moving:
+
+      scrolling - C y, C e
+      page start - g g
+      page end - G
+
+
+      remove surrounding - d s <paren type>
+
+
