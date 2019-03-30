@@ -40,6 +40,7 @@ windows:
       change frame - SPC w o
       close frame - SPC w D
       kill matching buffers - SPC SPC kill-matching-buffers
+      kill some buffers - SPC SPC kill-some-buffers
 
 version control:
 
@@ -47,6 +48,9 @@ version control:
 
 refactor:
 
+      remove-unused-deps - SPC SPC cljr-clean-ns
+      formatting vertical/buffer - C-c SPC
+      to upper/lower case - g U/g u
       replace - :%s/old/new/g
 
       add dependency - , r a p
@@ -119,6 +123,7 @@ projectile:
       buffers in a project - SPC p b
       compile project - SPC p c - check this one
       kill buffers in project - SPC p k
+      find file - SPC p f
 
 layout:
   
@@ -134,7 +139,21 @@ quiting:
       save buffers and quit - SPC q s
       kill frame - SPC q z
 
+CIDER:
+
+      cider debug:
+        navigating, jump one level up - L
+
+      run test - C-c C-t t/n
+
+      clear cider repl buffer - C-c C-o
+
 navigating:
+
+      jump to the end/beginning of a func - M-C-a/M-C-e
+      jump to matching braces - %
+      jump backward/forward - C-o/C-i
+
 
       show previous yanked parts - SPC r y
       list of functions - SPC s j
@@ -142,6 +161,8 @@ navigating:
 
       searching text - SPC s p (SPC /) (SPC *)
       searching text in open buffets - SPC s B/b
+
+      switch to REPL buffer - , s s
       
 
 evaluating:
@@ -152,9 +173,9 @@ evaluating:
         eval expr - , e e
         skewer repl - , '
 
+magit:
 
-
-
+      show branches - SPC g s y
 
 
 insert:
