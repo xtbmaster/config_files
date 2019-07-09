@@ -1,0 +1,212 @@
+* SYSTEM/TERMINAL CHEAT-SHEET
+** port listening processes - lsof -i :<port>
+** SQL
+*** brew services start/stop postgresql
+
+* SPACEMACS CHEAT-SHEET
+
+** ORG-MODE
+
+*** INSERTING
+
+**** insert new under category - M-o
+
+**** insert new same category - C-RET
+
+**** toggle checkbox - C-c C-c
+
+*** NAVIGATION
+
+**** scroll view - TAB
+
+**** un/narrow to subtree - SPC m n/r
+
+** MAGIT
+
+*** show branches - SPC g s y
+
+*** magit-checkout-file
+
+*** magit-log-buffer-file
+
+** INSERT
+
+*** uuid - SPC i U U
+
+*** utf code - SPC i u
+
+** REFACTOR
+
+*** REMOVE/DELETE
+
+**** remove unused deps - , r c n
+
+**** remove surrounding - d s <paren type>
+
+**** remove till the end of the line - C-k
+
+**** remove inner/outter sexp - SPC k e/E
+
+**** delete previous symbol EVIL - ds/Ds
+
+**** delete word EVIL - dw/Dw
+
+**** delete sexp EVIL - dx/Dx
+
+**** delete sexp - SPC k s/S
+
+*** SELECT
+
+**** expand region - SPC v
+
+*** ADD/PASTE
+
+**** add deps - , r a p
+
+**** copy and comment - SPC c y
+
+**** copy sexp - SPC k y
+
+**** add require to ns - , r a r
+
+**** add function with name under cursor - , r f e
+
+**** add function with sexp under cursor - , r e f
+
+**** paste expression EVIL - p/P
+
+**** show yanked parts - SPC r y
+
+**** add sexp after current expr - SPC k )
+
+*** EXCTRACT
+
+**** extract const - , r e c
+
+**** extract def - , r e d
+
+*** CHANGE/REPLACE
+
+**** change collection type - , r c <collection bracket>
+
+**** replace - :%s/<old>/<new>/g
+
+**** to upper/lower - SPC v U/u
+
+**** mark symbol - M-S .
+then->
+
+**** replace symbol - M-C-%
+
+**** edit occurencies - SPC s e/v e
+
+**** restrict the scope to a function - SPC s e F
+
+*** SEXP
+
+**** create thread macro from sexp - , r t l
+
+**** wrap extp in thread macro - , r u w
+
+**** unthread exp - , r u a
+
+**** absorb sexp - SPC k a (same as SPC k s but reverse)
+
+**** slurp - SPC k s/S
+
+**** wrap sexp - SPC k w
+
+**** unwrap sexp - SPC k W
+
+** PROJECTILE
+
+*** directories in a project - SPC p d
+
+*** buffers in a project - SPC p b
+
+*** kill buffers in a project - SPC p k
+
+*** find file - SPC p f
+
+** CIDER/REPL
+
+*** tab commands - M-p/M-n
+
+*** stop process - C-c C-c
+
+*** switch to the buffer - , s s
+
+*** update project deps - , r u p
+
+** UTILS
+
+*** change file encoding - C-x RET f
+
+** SEARCHING
+
+*** searching text - SPC s p / SPC s s / SPC / (SPC *)
+
+*** searching text in opened buffers - SPC s B/b
+
+** CODE
+
+*** function docs - K
+
+*** list of funcs - SPC s j
+
+** NAVIGATION
+
+*** JUMP
+
+**** set a mark - C-SPC
+then ->
+
+**** to the mark - SPC u C-SPC
+
+**** to the char - SPC j j / f <char>
+
+**** to the exp end/beginning - SPC k $/0
+
+**** to the next exp end/bginning - SPC k j/k
+
+**** to the beginning of the parent sexp - SPC k U
+
+**** to the end/beginning of a func - M-C-a/e
+
+**** to a matching braces - %
+
+**** forward/backward - C-o/i
+
+*** scrolling - C y/e
+
+*** page start/end - g g / G
+
+*** highlight symbol - S *
+
+*** EVIL-MODE
+
+**** turn on - SPC k .
+
+**** moving - SPC k l/L/h/H/j/k
+
+** WINDOWS/BUFFERS
+
+*** create new frame - SPC w F
+
+*** change frame - SPC w o
+
+*** close frame - SPC w D
+
+*** kill frame - SPC q z
+
+*** kill matching buffers - SPC SPC kill-matching-buffers
+
+*** kill some buffers - SPC SPC kill-some-buffers
+
+*** save buffers and quit - SPC q s
+
+*** quit unsafe - SPC q Q
+
+*** encapsulate part for editing in a separate window - SPC n r/w
+
+*** restart and resume layouts - SPC q r
