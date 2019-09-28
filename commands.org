@@ -1,7 +1,26 @@
 * SYSTEM/TERMINAL CHEAT-SHEET
+
 ** port listening processes - lsof -i :<port>
+
 ** SQL
+
 *** brew services start/stop postgresql
+
+** tmux
+
+*** new session - new -s <name>
+
+*** attach - a -t <name>
+
+*** kill-session -t <name>
+
+*** new window - C-b c
+
+*** name window - C-b ,
+
+*** kill window - C-d &
+
+*** split - C-d %/"
 
 * SPACEMACS CHEAT-SHEET
 
@@ -54,6 +73,12 @@
 **** delete sexp EVIL - dx/Dx
 
 **** delete sexp - SPC k s/S
+
+*** FORMATTING
+
+**** realign current form - , f l
+
+**** folding - SPC z .
 
 *** SELECT
 
@@ -210,3 +235,4 @@ then ->
 *** encapsulate part for editing in a separate window - SPC n r/w
 
 *** restart and resume layouts - SPC q r
+
